@@ -1,0 +1,55 @@
+/* styles/CreatePost.module.css */
+.createPostContainer {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .createPostContainer h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: gray;
+  }
+  
+  .postForm {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .postForm label {
+    margin-bottom: 5px;
+    color: lightcoral;
+  }
+  
+  .postForm input,
+  .postForm textarea {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .postForm input[type='checkbox'] {
+    width: auto;
+    margin-right: 10px;
+  }
+  
+  .submitBtn {
+    padding: 10px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .submitBtn:hover {
+    background-color: #ee2a1c;
+  }
+  
+  .error {
+    color: #ff4d4f;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  

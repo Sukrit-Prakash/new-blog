@@ -1,0 +1,154 @@
+/* Updated PostDetail.module.css */
+.postDetail {
+  max-width: 850px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.coverImage {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.postDetail h1 {
+  font-size: 2.4rem;
+  font-family: "Playfair Display", serif;
+  margin-top: 0;
+  color: #2b2b2b;
+}
+
+.meta {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 30px;
+  font-style: italic;
+}
+
+.content {
+  line-height: 1.8;
+  color: #444;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.commentsSection {
+  margin-top: 50px;
+  padding: 20px;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.commentsSection h3 {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 5px;
+  color: #de4646;
+}
+
+.commentForm {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.commentForm textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.submitBtn {
+  align-self: flex-end;
+  padding: 10px 20px;
+  background: #f44747;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submitBtn:hover {
+  background: #b55400;
+}
+
+.error {
+  color: #e63946;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.commentsList {
+  border-top: 1px solid #e3e3e3;
+  padding-top: 20px;
+}
+
+.commentsList p {
+  font-size: 1rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+/* Enhancing individual comments */
+.commentItem {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(210, 43, 43, 0.1);
+}
+
+.commentItem img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.commentItem .content {
+  flex: 1;
+}
+
+.commentItem .content p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.commentItem .content .author {
+  font-weight: bold;
+  color: #0078d4;
+}
+
+.commentItem .actions {
+  margin-left: auto;
+  display: flex;
+  gap: 5px;
+}
+
+.commentItem .actions button {
+  border: none;
+  background: transparent;
+  color: #888;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.commentItem .actions button:hover {
+  color: #333;
+}

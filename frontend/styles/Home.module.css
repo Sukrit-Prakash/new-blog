@@ -1,0 +1,75 @@
+.banner {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #f0f4f8;
+  border-radius: 12px;
+  margin-bottom: 40px;
+}
+
+.banner h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.banner p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.categories {
+  overflow-x: auto;
+  display: flex;
+  white-space: nowrap;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.categorySlider {
+  display: inline-flex;
+  gap: 15px;
+}
+
+.categoryButton {
+  padding: 10px 20px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  white-space: nowrap;
+}
+
+.categoryButton:hover {
+  background-color: lightpink;
+  color: white;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+}
+
+.active {
+  background-color: rgb(242, 72, 72);
+  color: white;
+}
+
+.posts {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.categories::-webkit-scrollbar {
+  display: none;
+}
+
+.categories {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
